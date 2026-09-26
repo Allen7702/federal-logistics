@@ -1,3 +1,6 @@
+# Flat npm-style node_modules so the standalone build has no symlinks
+# (cPanel/Passenger cannot resolve pnpm's linked layout once zipped).
+nodeLinker: hoisted
 ignoredBuiltDependencies:
   - sharp
   - unrs-resolver
