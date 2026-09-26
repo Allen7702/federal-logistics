@@ -1,26 +1,116 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-display: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy-50: #eef3fc;
+  --color-navy-100: #d6e2f7;
+  --color-navy-200: #aec4ef;
+  --color-navy-400: #4186e9;
+  --color-navy-600: #12459d;
+  --color-navy-700: #08307c;
+  --color-navy-800: #001f5f;
+  --color-navy-900: #001440;
+  --color-navy-950: #000c28;
+
+  --color-ember-400: #ff9433;
+  --color-ember-500: #fd7101;
+  --color-ember-600: #e06200;
+  --color-ember-700: #b84f00;
+
+  --color-steel-50: #f6f7f9;
+  --color-steel-100: #eceef2;
+  --color-steel-200: #dde1e8;
+  --color-steel-400: #94a0b4;
+  --color-steel-600: #5a6880;
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: var(--color-navy-900);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-ember-500);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ember-500);
+    outline-offset: 3px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Tracked-out eyebrow label used above section headings. */
+  .eyebrow {
+    font-family: var(--font-display);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+  }
+  /* Thin rule that sits under section eyebrows, echoing the brand arrow. */
+  .rule-ember::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    margin-top: 0.75rem;
+    background: var(--color-ember-500);
+  }
+  /* Regional map labels: bumped up on phones, where the SVG is scaled down.
+     City labels are dropped there — the dots stay, the clutter does not. */
+  .map-country {
+    font-size: 14px;
+  }
+  .map-country-hub {
+    font-size: 17px;
+  }
+  .map-city {
+    font-size: 13px;
+  }
+  .map-port {
+    font-size: 14px;
+  }
+  @media (max-width: 640px) {
+    .map-country {
+      font-size: 23px;
+    }
+    .map-country-hub {
+      font-size: 27px;
+    }
+    .map-city {
+      display: none;
+    }
+    .map-port {
+      font-size: 22px;
+    }
+  }
+
+  /* Faint blueprint grid used behind navy sections. */
+  .blueprint {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
 }
