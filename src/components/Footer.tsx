@@ -106,6 +106,16 @@ export default function Footer() {
                   {company.email}
                 </a>
               </p>
+              <p>
+                <a
+                  href={company.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-ember-400"
+                >
+                  Instagram {company.instagramHandle}
+                </a>
+              </p>
             </address>
             <Link
               href="/quote"

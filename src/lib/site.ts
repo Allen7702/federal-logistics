@@ -3,8 +3,8 @@ export const company = {
   shortName: "Federal Logistics",
   tagline: "Reliable Logistics • Smart Procurement • Seamless Supply",
   established: 2022,
-  phone: "+255 713 426623",
-  phoneHref: "tel:+255713426623",
+  phone: "+255 762 055 955",
+  phoneHref: "tel:+255762055955",
   email: "info@federallogisticsgroup.co.tz",
   emailHref: "mailto:info@federallogisticsgroup.co.tz",
   address: {
@@ -13,6 +13,8 @@ export const company = {
     city: "Dar es Salaam",
     country: "Tanzania",
   },
+  instagram: "https://www.instagram.com/federal__logistics",
+  instagramHandle: "@federal__logistics",
   mapQuery: "NIC Investment House, Samora Avenue, Dar es Salaam, Tanzania",
 } as const;
 

@@ -60,6 +60,17 @@ export default function ContactPage() {
                     {company.email}
                   </a>
                 </div>
+                <div>
+                  <h2 className="eyebrow text-steel-600">Instagram</h2>
+                  <a
+                    href={company.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 block text-base font-semibold text-navy-900 hover:text-ember-600"
+                  >
+                    {company.instagramHandle}
+                  </a>
+                </div>
               </address>
 
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">

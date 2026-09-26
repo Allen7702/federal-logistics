@@ -63,6 +63,7 @@ const organizationSchema = {
   logo: `${siteUrl}/logo.png`,
   telephone: company.phone,
   email: company.email,
+  sameAs: [company.instagram],
   foundingDate: String(company.established),
   address: {
     "@type": "PostalAddress",
