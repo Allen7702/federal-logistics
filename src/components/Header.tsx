@@ -29,10 +29,10 @@ export default function Header() {
       <div className="mx-auto flex h-18 max-w-7xl items-center gap-6 px-4 sm:px-6 lg:px-10">
         <Link href="/" className="flex shrink-0 items-center gap-3">
           <Image
-            src="/logo-mark.png"
+            src="/logo-federal-white.png"
             alt=""
-            width={493}
-            height={471}
+            width={491}
+            height={502}
             className="h-9 w-9 object-contain"
             priority
           />
