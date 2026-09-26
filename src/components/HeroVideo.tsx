@@ -73,6 +73,9 @@ export default function HeroVideo({ src, poster }: { src: string; poster: string
         ready ? "opacity-100" : "opacity-0"
       }`}
     >
+      {/* AV1 first: sharper at a smaller size. Browsers that can't decode it
+          skip to the H.264 file. */}
+      <source src={`${src}.webm`} type='video/webm; codecs="av01.0.08M.08"' />
       <source src={`${src}.mp4`} type="video/mp4" />
     </video>
   );

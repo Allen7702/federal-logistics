@@ -49,7 +49,8 @@ lost, but mail must be wired up before launch.
 
 ## Hero video
 
-The hero plays `public/video/hero-port-hd-v2.mp4` behind the headline, over the still at
+The hero plays `public/video/hero-port-hd-v3.webm` (AV1) or, where AV1 isn't supported,
+`hero-port-hd-v3.mp4` (H.264) behind the headline, over the still at
 `public/images/quay-clearance.webp`. `src/components/HeroVideo.tsx` keeps it well-behaved: the
 still is always rendered underneath, and the video only mounts and fades in when it is worth
 playing — never on phones, never under `prefers-reduced-motion`, never on save-data or 2G/3G
@@ -68,12 +69,14 @@ Ports Authority material, used with permission), in `~/Videos/Federal`:
 Two-second cross-fades between shots, a 1.2s tail-to-head fade so the 22-second loop is soft, no
 audio. Every frame is cropped `1920x880` from `y=200` — the TPA crest sits in a 1673–1885 x 68–199
 box, so dropping the top band removes it at full width with no upscaling and no retouching. The
-2.18:1 result suits the hero's letterbox shape. Encoded x264 crf 30, `veryslow`, `tune film` —
-5.4 MB. Consider carrying a "Footage: Tanzania Ports Authority" credit in the footer.
+2.18:1 result suits the hero's letterbox shape. The footage is graded out of its flat teal look
+(slightly brighter, more saturated, warmer, lightly sharpened) and encoded once from the camera
+files: AV1 crf 46 (5.8 MB) and x264 crf 23 capped at 3 Mbps (7.6 MB). Consider carrying a
+"Footage: Tanzania Ports Authority" credit in the footer.
 
-To change the cut, re-run the ffmpeg steps against the sources in `~/Videos/Federal`. To drop in
-different footage, add it under `public/video/` and point `HeroVideo`'s `src` in
-`src/components/Hero.tsx` at it. Give each new file a distinct name rather than overwriting the
+To change the cut or the grade, edit and re-run `./scripts/grade-hero-video.sh`, which reads the
+sources in `~/Videos/Federal`. To drop in different footage, add it under `public/video/` and
+point `HeroVideo`'s `src` in `src/components/Hero.tsx` at it. Give each new file a distinct name rather than overwriting the
 old one — browsers cache video hard, and a changed URL is the only reliable cache-bust.
 
 `./scripts/build-hero-video.sh` rebuilds the earlier stand-in reel — a silent 17-second loop

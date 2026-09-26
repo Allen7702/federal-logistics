@@ -6,29 +6,26 @@ import HeroVideo from "./HeroVideo";
 export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-navy-900">
-      {/* Footage (or the still it falls back to) occupies the right of the
-          frame; the navy panel cuts across it. */}
-      <div className="absolute inset-0 lg:left-[38%]">
+      {/* Footage (or the still it falls back to) fills the frame edge to edge. */}
+      <div className="absolute inset-0">
         <Image
           src="/images/quay-clearance.webp"
           alt="Clearing officer checking documents against a container truck at Dar es Salaam Port"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover brightness-105 saturate-[1.15]"
         />
-        <HeroVideo src="/video/hero-port-hd-v2" poster="/images/quay-clearance.webp" />
+        <HeroVideo src="/video/hero-port-hd-v3" poster="/images/quay-clearance.webp" />
       </div>
-      <div className="absolute inset-0 bg-navy-950/80 lg:hidden" />
+      {/* The text runs over the footage, so the frame is shaded where the text
+          sits: top to bottom below lg (text spans the width), left to right on
+          wide screens (text holds the left half, the footage opens up on the right). */}
       <div
         aria-hidden
-        className="absolute inset-y-0 left-0 right-0 hidden lg:block"
-        style={{
-          background:
-            "linear-gradient(100deg, var(--color-navy-950) 0%, var(--color-navy-950) 38%, rgba(0,20,64,0.92) 46%, rgba(0,20,64,0.35) 62%, rgba(0,20,64,0.15) 100%)",
-        }}
+        className="absolute inset-0 bg-linear-to-b from-navy-950/60 via-navy-950/75 to-navy-950/90 lg:bg-linear-to-r lg:from-navy-950/85 lg:via-navy-950/60 lg:to-navy-950/25"
       />
-      <div className="blueprint absolute inset-0 opacity-60" />
+      <div className="blueprint absolute inset-0 opacity-40" />
 
       <div className="relative mx-auto max-w-7xl px-4 pb-14 pt-16 sm:px-6 sm:pt-20 lg:px-10 lg:pb-16 lg:pt-24">
         <p className="eyebrow text-navy-200">
