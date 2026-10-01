@@ -9,7 +9,7 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Our Network",
   description:
-    "Dar es Salaam Port, Kilindini and the major border posts, with road haulage reaching Zambia, DR Congo, Rwanda, Burundi, Uganda and Malawi.",
+    "Dar es Salaam, Tanga, Mtwara and Zanzibar ports and the major border posts, with road haulage reaching Zambia, DR Congo, Rwanda, Burundi, Uganda and Malawi.",
   alternates: { canonical: "/network" },
 };
 
@@ -20,9 +20,9 @@ const gateways = [
       "Our primary gateway. Clearing, terminal coordination and gate-out for containerised, bulk and project cargo.",
   },
   {
-    title: "Kilindini",
+    title: "Tanga, Mtwara & Zanzibar ports",
     detail:
-      "Cargo routed through Kilindini is cleared and forwarded onward to Tanzanian and corridor destinations.",
+      "Cargo arriving through Tanzania's other seaports is cleared and forwarded onward to inland and corridor destinations.",
   },
   {
     title: "Major border posts",

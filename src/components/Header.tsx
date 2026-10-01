@@ -46,7 +46,7 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="ml-auto hidden items-center gap-1 lg:flex">
+        <nav className="ml-auto hidden items-center gap-0.5 xl:flex">
           {nav.map((item) => {
             const active =
               item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
@@ -54,13 +54,13 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative px-3 py-2 text-[0.82rem] font-medium transition-colors ${
+                className={`relative px-2.5 py-2 text-[0.82rem] font-medium transition-colors ${
                   active ? "text-white" : "text-navy-100/80 hover:text-white"
                 }`}
               >
                 {item.label}
                 <span
-                  className={`absolute inset-x-3 -bottom-0.5 h-0.5 bg-ember-500 transition-transform duration-300 ease-out-quint ${
+                  className={`absolute inset-x-2.5 -bottom-0.5 h-0.5 bg-ember-500 transition-transform duration-300 ease-out-quint ${
                     active ? "scale-x-100" : "scale-x-0"
                   }`}
                 />
@@ -69,10 +69,10 @@ export default function Header() {
           })}
         </nav>
 
-        <div className="ml-auto flex items-center gap-2 lg:ml-0">
+        <div className="ml-auto flex items-center gap-2 xl:ml-0">
           <a
             href={company.phoneHref}
-            className="hidden text-sm font-semibold text-white xl:block"
+            className="hidden text-sm font-semibold text-white 2xl:block"
           >
             {company.phone}
           </a>
@@ -88,7 +88,7 @@ export default function Header() {
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
-            className="grid h-10 w-10 place-items-center text-white lg:hidden"
+            className="grid h-10 w-10 place-items-center text-white xl:hidden"
           >
             <span className="relative block h-4 w-6">
               <span
@@ -112,8 +112,8 @@ export default function Header() {
       </div>
 
       <div
-        className={`overflow-hidden border-t border-white/10 bg-navy-900 transition-[max-height] duration-400 ease-out-quint lg:hidden ${
-          open ? "max-h-[32rem]" : "max-h-0"
+        className={`overflow-hidden border-t border-white/10 bg-navy-900 transition-[max-height] duration-400 ease-out-quint xl:hidden ${
+          open ? "max-h-[40rem]" : "max-h-0"
         }`}
       >
         <nav className="mx-auto max-w-7xl px-4 py-4 sm:px-6">

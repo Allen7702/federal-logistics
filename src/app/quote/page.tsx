@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const expect = [
   {
     title: "We read it the same day",
-    detail: "Enquiries reach the operations team directly, not a generic inbox queue.",
+    detail: "Enquiries reach the operations team directly.",
   },
   {
     title: "We confirm what is missing",
@@ -24,7 +24,7 @@ const expect = [
   {
     title: "You get a scope, then a price",
     detail:
-      "The quotation states what is included (clearance, handling, transport), so there are no surprises later.",
+      "The quotation states what is included (clearance, handling, transport).",
   },
 ];
 

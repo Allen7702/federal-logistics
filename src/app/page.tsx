@@ -6,7 +6,15 @@ import Hero from "@/components/Hero";
 import QuoteForm from "@/components/QuoteForm";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
-import { clearingSteps, services, values, whyUs } from "@/lib/site";
+import {
+  clearingSteps,
+  company,
+  services,
+  strategy,
+  testimonials,
+  values,
+  whyUs,
+} from "@/lib/site";
 
 const quickServices = [
   ...services.map((s) => ({
@@ -31,8 +39,58 @@ export default function HomePage() {
     <>
       <Hero />
 
-      {/* Clearing & forwarding: the lead capability */}
+      {/* About: introduction, vision and mission */}
       <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+          <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+            <Reveal>
+              <SectionHeading
+                eyebrow="About us"
+                title="A bridge between suppliers, ports and the businesses that depend on them"
+              />
+              <div className="mt-6 space-y-5 text-base leading-relaxed text-steel-600">
+                <p>
+                  Federal Logistics Group Limited is a fully integrated supply chain and logistics
+                  management firm headquartered in Dar es Salaam, Tanzania. Established in{" "}
+                  {company.established}, the company specialises in end-to-end procurement,
+                  cross-border freight logistics and general supply services.
+                </p>
+                <p>
+                  We connect manufacturers, corporate clients and government institutions with
+                  high-quality materials and reliable transport networks across East and Central
+                  Africa.
+                </p>
+              </div>
+              <Link
+                href="/about"
+                className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-navy-800 underline decoration-ember-500 decoration-2 underline-offset-8 hover:text-ember-600"
+              >
+                More about us <span aria-hidden>→</span>
+              </Link>
+            </Reveal>
+
+            <Reveal delay={120}>
+              <div className="grid gap-px border border-steel-200 bg-steel-200">
+                <div className="bg-steel-50 p-8">
+                  <h3 className="eyebrow text-ember-600">Vision</h3>
+                  <p className="mt-4 font-display text-lg font-bold leading-snug tracking-tight text-navy-900 sm:text-xl">
+                    {strategy.vision}
+                  </p>
+                </div>
+                <div className="bg-steel-50 p-8">
+                  <h3 className="eyebrow text-ember-600">Mission</h3>
+                  <p className="mt-4 font-display text-lg font-bold leading-snug tracking-tight text-navy-900 sm:text-xl">
+                    {strategy.mission}
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Clearing & forwarding: the lead capability */}
+      <section className="bg-steel-50 py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
           <div className="grid gap-14 lg:grid-cols-[1fr_1.05fr] lg:items-start">
             <Reveal>
@@ -44,7 +102,7 @@ export default function HomePage() {
                     <span className="text-ember-500"> handled properly.</span>
                   </>
                 }
-                intro="Clearance is where consignments stall and costs build. We process import and export documentation through TRA at Dar es Salaam Port, Kilindini and the major border posts, then move the cargo onward, so one team carries your consignment from vessel to final destination."
+                intro="Clearance is where consignments stall and costs build. We process import and export documentation through TRA at the Dar es Salaam, Tanga, Mtwara and Zanzibar ports and at the major border posts. We then move the cargo onward, so one team carries your consignment from arrival to final destination."
               />
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
@@ -86,7 +144,7 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="bg-steel-50 py-20 sm:py-24">
+      <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
           <Reveal>
             <SectionHeading
@@ -196,8 +254,41 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Values + quote form */}
+      {/* Testimonials */}
       <section className="bg-steel-50 py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Testimonials"
+              title="What our clients say"
+              intro="Feedback from the businesses and institutions whose cargo and supplies we handle."
+            />
+          </Reveal>
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {testimonials.map((item, i) => (
+              <Reveal key={item.quote} delay={i * 80}>
+                <figure className="flex h-full flex-col border-t-2 border-ember-500 bg-white p-7 sm:p-8">
+                  <span aria-hidden className="font-display text-5xl leading-none text-ember-500">
+                    &ldquo;
+                  </span>
+                  <blockquote className="mt-2 flex-1 text-base leading-relaxed text-navy-900">
+                    {item.quote}
+                  </blockquote>
+                  <figcaption className="mt-6 border-t border-steel-200 pt-5">
+                    <p className="font-display text-sm font-bold tracking-tight text-navy-900">
+                      {item.name}
+                    </p>
+                    <p className="mt-1 text-sm text-steel-600">{item.org}</p>
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Values + quote form */}
+      <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
           <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
             <Reveal>

@@ -13,6 +13,7 @@ export const company = {
     city: "Dar es Salaam",
     country: "Tanzania",
   },
+  whatsappHref: "https://wa.me/255762055955",
   instagram: "https://www.instagram.com/federal__logistics",
   instagramHandle: "@federal__logistics",
   mapQuery: "NIC Investment House, Samora Avenue, Dar es Salaam, Tanzania",
@@ -20,20 +21,50 @@ export const company = {
 
 export const nav = [
   { href: "/", label: "Home" },
-  { href: "/clearing-and-forwarding", label: "Clearing & Forwarding" },
+  { href: "/about", label: "About Us" },
   { href: "/services", label: "Services" },
   { href: "/industries", label: "Industries" },
-  { href: "/network", label: "Network" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/network", label: "Our Network" },
+  { href: "/contact", label: "Contact Us" },
 ] as const;
+
+// Sample testimonials. Replace with real, client-approved quotes before launch.
+export const testimonials = [
+  {
+    quote:
+      "Our machinery imports used to sit at the port for weeks. Federal Logistics cleared the last consignment in days and delivered it straight to site.",
+    name: "Operations Manager",
+    org: "Construction company, Dar es Salaam",
+  },
+  {
+    quote:
+      "One team handled the clearing, the trucking to Lusaka and the paperwork at the border. We always knew where the cargo was.",
+    name: "Supply Chain Lead",
+    org: "Manufacturing firm, Zambia",
+  },
+  {
+    quote:
+      "They sourced our office and ICT equipment against the exact specification and delivered on schedule, with every document in order.",
+    name: "Procurement Officer",
+    org: "Public institution, Dodoma",
+  },
+] as const;
+
+export const ports = ["Dar es Salaam Port", "Tanga Port", "Mtwara Port", "Zanzibar Port"] as const;
+
+export const strategy = {
+  vision:
+    "To be the most reliable and innovative partner in general procurement and multimodal logistics within sub-Saharan Africa.",
+  mission:
+    "To deliver exceptional value to our clients by providing cost-effective, timely and high-quality procurement and distribution services while maintaining the highest ethical standards.",
+} as const;
 
 export const services = [
   {
     slug: "customs-clearing",
     title: "Customs Clearing & Port Operations",
     summary:
-      "Import and export documentation processed through TRA at Dar es Salaam Port, Kilindini and major border posts.",
+      "Import and export documentation processed through TRA at the Dar es Salaam, Tanga, Mtwara and Zanzibar ports and at major border posts.",
     points: [
       "Import and export documentation",
       "TRA processing and duty assessment",
@@ -57,6 +88,20 @@ export const services = [
     ],
     image: "/images/road-haulage.webp",
     imageAlt: "Articulated truck hauling a container along a highway corridor",
+  },
+  {
+    slug: "air-freight",
+    title: "Air Freight",
+    summary:
+      "Air cargo imports and exports for urgent, high-value and time-sensitive consignments, with airport clearance and onward delivery handled by the same team.",
+    points: [
+      "Urgent and time-sensitive cargo",
+      "High-value and lightweight consignments",
+      "Airway bill and airport clearance",
+      "Collection and onward delivery",
+    ],
+    image: "/images/air-freight.webp",
+    imageAlt: "Ground crew directing palletised cargo onto a freighter aircraft at the airport",
   },
   {
     slug: "warehousing",
@@ -125,7 +170,7 @@ export const clearingSteps = [
     step: "03",
     title: "Port & Border Clearance",
     detail:
-      "Verification, inspection and terminal charges are coordinated at Dar es Salaam Port, Kilindini or the border post handling your cargo.",
+      "Verification, inspection and terminal charges are coordinated at the port, airport or border post handling your cargo.",
   },
   {
     step: "04",
@@ -139,7 +184,7 @@ export const corridors = [
   {
     country: "Tanzania",
     flag: "tz",
-    note: "Dar es Salaam Port, Kilindini and inland economic zones",
+    note: "Dar es Salaam, Tanga, Mtwara and Zanzibar ports, plus inland economic zones",
   },
   { country: "Zambia", flag: "zm", note: "Southern corridor haulage" },
   { country: "DR Congo", flag: "cd", note: "Central corridor haulage" },
@@ -192,12 +237,12 @@ export const whyUs = [
   {
     title: "Solutions built per client",
     detail:
-      "Requirements differ by sector and consignment; the handling plan is built around yours.",
+      "Every sector and consignment has different requirements, so we build the handling plan around yours.",
   },
   {
     title: "Regional transport reach",
     detail:
-      "Tanzania plus the landlinked markets our corridors serve, coordinated end to end.",
+      "Tanzania and the landlinked markets our corridors serve, coordinated from end to end.",
   },
 ] as const;
 

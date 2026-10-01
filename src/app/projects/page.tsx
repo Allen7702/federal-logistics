@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   description:
     "Completed and ongoing logistics and procurement assignments handled by Federal Logistics Group Limited.",
   alternates: { canonical: "/projects" },
+  // Hidden (not in menu, footer or sitemap) until real projects are approved.
+  robots: { index: false },
 };
 
 const caseStudyShape = [

@@ -18,7 +18,7 @@ export default function IndustriesPage() {
       <PageHero
         eyebrow="Industries & solutions"
         title="Different sectors, different pressure points"
-        intro="A stalled container costs a construction programme differently from how it costs a production line. These are the sectors our capabilities are built around."
+        intro="A delayed container affects a construction project differently from a production line. These are the sectors our capabilities are built around."
         image="/images/project-cargo.webp"
         imageAlt="Crane lifting a crated industrial machine at the quayside"
       />

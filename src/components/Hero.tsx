@@ -44,7 +44,7 @@ export default function Hero() {
 
         <p className="mt-7 max-w-xl text-base leading-relaxed text-navy-100/80 sm:text-lg">
           Federal Logistics Group Limited provides end-to-end procurement and multimodal
-          logistics solutions, connecting Manufactures, corporate clients and government
+          logistics solutions, connecting manufacturers, corporate clients and government
           institutions with quality materials and seamless transport networks across East and
           Central Africa.
         </p>

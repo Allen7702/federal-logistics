@@ -4,7 +4,7 @@ import CTASection from "@/components/CTASection";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
-import { company, values } from "@/lib/site";
+import { company, strategy, values } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -19,7 +19,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="A bridge between suppliers, ports and the businesses waiting on cargo"
-        intro="Established in 2022 and headquartered in Dar es Salaam, Federal Logistics Group Limited connects Manufactures, corporate clients and government institutions with quality materials and good transport networks."
+        intro="Established in 2022 and headquartered in Dar es Salaam, Federal Logistics Group Limited connects manufacturers, corporate clients and government institutions with high-quality materials and reliable transport networks."
         image="/images/vessel-arrival.webp"
         imageAlt="Container vessel arriving at the Port of Dar es Salaam"
       />
@@ -38,7 +38,7 @@ export default function AboutPage() {
                   general supply services.
                 </p>
                 <p>
-                  The company acts as a bridge connecting Manufactures, corporate clients and
+                  The company acts as a bridge connecting manufacturers, corporate clients and
                   government institutions with high-quality materials and seamless transport
                   networks across East and Central Africa, with customs clearing and
                   forwarding at the centre of that work.
@@ -92,8 +92,7 @@ export default function AboutPage() {
               <div className="h-full bg-navy-900 p-8 sm:p-10">
                 <h3 className="eyebrow text-ember-400">Vision</h3>
                 <p className="mt-5 font-display text-xl font-bold leading-snug tracking-tight text-white sm:text-2xl">
-                  To be the most reliable and innovative partner in general procurement and
-                  multimodal logistics within sub-Saharan Africa.
+                  {strategy.vision}
                 </p>
               </div>
             </Reveal>
@@ -101,9 +100,7 @@ export default function AboutPage() {
               <div className="h-full bg-navy-900 p-8 sm:p-10">
                 <h3 className="eyebrow text-ember-400">Mission</h3>
                 <p className="mt-5 font-display text-xl font-bold leading-snug tracking-tight text-white sm:text-2xl">
-                  To deliver exceptional value to our clients by providing cost-effective,
-                  timely and high-quality procurement and distribution services while
-                  maintaining the highest ethical standards.
+                  {strategy.mission}
                 </p>
               </div>
             </Reveal>

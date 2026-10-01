@@ -42,8 +42,7 @@ lost, but mail must be wired up before launch.
 | `/industries` | Sector solutions |
 | `/network` | Dar es Salaam hub, corridor diagram, gateways |
 | `/about` | Profile, vision, mission, core values, team placeholder |
-| `/projects` | Portfolio shell + the case-study structure to fill |
-| `/testimonials` | Trust content; verified testimonials go here once approved |
+| `/projects` | Portfolio shell, **hidden** (not linked, `noindex`) until real projects are supplied. To publish: fill it in, remove `robots` from its metadata, and re-add it to `nav` in `src/lib/site.ts`, `quickLinks` in `src/components/Footer.tsx` and `src/app/sitemap.ts` |
 | `/quote`, `/contact` | Enquiry forms, click-to-call/email, embedded map |
 | `/privacy-policy`, `/terms` | Draft legal pages, marked `noindex` until approved |
 
@@ -112,7 +111,7 @@ one file updates every page that uses it. Images live in `public/images/` (WebP,
 9. Any certifications, memberships, awards or partnerships to display
 10. Confirmation that the TPA footage may be published on the company's own site
 
-Nothing on the site is invented: no fake testimonials, statistics, client logos or case studies.
+Nothing on the site is invented except the three sample testimonials on the home page (`testimonials` in `src/lib/site.ts`), which must be replaced with real, client-approved quotes before launch. There are no invented statistics, client logos or case studies.
 Sections that need approved content say so plainly instead.
 
 ## Notes for launch

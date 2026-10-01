@@ -10,12 +10,13 @@ import { clearingSteps } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Customs Clearing & Forwarding in Dar es Salaam",
   description:
-    "Import and export customs clearing through TRA at Dar es Salaam Port, Kilindini and major border posts, with onward forwarding across Tanzania and the region.",
+    "Import and export customs clearing through TRA at the Dar es Salaam, Tanga, Mtwara and Zanzibar ports and at major border posts, with onward forwarding across Tanzania and the region.",
   alternates: { canonical: "/clearing-and-forwarding" },
 };
 
 const handled = [
   "Sea freight imports and exports through Dar es Salaam Port, Mtwara Port, Tanga Port and Zanzibar Port",
+  "Air cargo clearance and airway bill handling",
   "Border post clearance for corridor traffic",
   "Containerised, bulk, loose and out-of-gauge consignments",
   "Duty and tax assessment with TRA",
@@ -39,7 +40,7 @@ export default function ClearingPage() {
       <PageHero
         eyebrow="Clearing & Forwarding"
         title="Clearance that does not hold your cargo hostage"
-        intro="Import and export documentation processed through TRA at Dar es Salaam Port, Kilindini and major border posts, then forwarded onward by road to wherever the consignment is needed."
+        intro="Import and export documentation processed through TRA at the Dar es Salaam, Tanga, Mtwara and Zanzibar ports and at major border posts. Cargo is then forwarded by road to wherever it is needed."
         image="/images/customs-documentation.webp"
         imageAlt="Clearing agent recording container details at the quayside in Dar es Salaam"
       />

@@ -10,7 +10,7 @@ import { services, supplies } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Our Services",
   description:
-    "Freight forwarding and transport, customs clearing and port operations, warehousing and distribution, specialised cargo handling, and general supplies and procurement.",
+    "Freight forwarding and transport, air freight, customs clearing and port operations, warehousing and distribution, specialised cargo handling, and general supplies and procurement.",
   alternates: { canonical: "/services" },
 };
 
@@ -20,7 +20,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Our services"
         title="Two divisions, one accountable team"
-        intro="Logistics and supply chain on one side, general supplies and procurement on the other, combined when a client needs the goods sourced, cleared and delivered together."
+        intro="Logistics and supply chain on one side, general supplies and procurement on the other. When a client needs goods sourced, cleared and delivered, we combine the two."
         image="/images/port-truck-convoy.webp"
         imageAlt="Container trucks leaving the terminal at Dar es Salaam Port"
       />
@@ -31,7 +31,7 @@ export default function ServicesPage() {
             <SectionHeading
               eyebrow="Division A"
               title="Logistics & Supply Chain"
-              intro="Moving cargo through the port and across the region, with the compliance work handled alongside it."
+              intro="Moving cargo by sea, air and road across the region, with the compliance work handled alongside it."
             />
           </Reveal>
 
