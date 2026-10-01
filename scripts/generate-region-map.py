@@ -1,4 +1,4 @@
-"""Generate src/lib/regionMap.ts — the East & Central Africa map paths.
+"""Generate src/lib/regionMap.ts: the East & Central Africa map paths.
 
 Source data: Natural Earth 50m boundaries, via the world-atlas TopoJSON build.
 Run from the project root:

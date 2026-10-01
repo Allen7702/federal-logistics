@@ -21,7 +21,7 @@ function shouldPlay() {
 
 /**
  * Background footage for the hero. The still image underneath is always
- * rendered, and the video only mounts — and only fades in — when it is
+ * rendered, and the video only mounts, and only fades in, when it is
  * appropriate and actually playable:
  *
  *  - skipped on phones (the still reads better and costs no data)

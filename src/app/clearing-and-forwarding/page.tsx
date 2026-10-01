@@ -15,14 +15,13 @@ export const metadata: Metadata = {
 };
 
 const handled = [
-  "Sea freight imports and exports through Dar es Salaam Port",
-  "Cargo routed via Kilindini and onward to Tanzanian destinations",
-  "Border-post clearance for corridor traffic",
+  "Sea freight imports and exports through Dar es Salaam Port, Mtwara Port, Tanga Port and Zanzibar Port",
+  "Border post clearance for corridor traffic",
   "Containerised, bulk, loose and out-of-gauge consignments",
   "Duty and tax assessment with TRA",
   "Permit and regulatory documentation follow-up",
   "Terminal, storage and demurrage coordination",
-  "Delivery orders, gate-out and onward road transport",
+  "Delivery orders, gate out and onward road transport",
 ];
 
 const documents = [
@@ -40,7 +39,7 @@ export default function ClearingPage() {
       <PageHero
         eyebrow="Clearing & Forwarding"
         title="Clearance that does not hold your cargo hostage"
-        intro="Import and export documentation processed through TRA at Dar es Salaam Port, Kilindini and major border posts — then forwarded onward by road to wherever the consignment is needed."
+        intro="Import and export documentation processed through TRA at Dar es Salaam Port, Kilindini and major border posts, then forwarded onward by road to wherever the consignment is needed."
         image="/images/customs-documentation.webp"
         imageAlt="Clearing agent recording container details at the quayside in Dar es Salaam"
       />
@@ -111,7 +110,7 @@ export default function ClearingPage() {
               <SectionHeading
                 eyebrow="Before you send"
                 title="What to have ready"
-                intro="Having these to hand when you contact us shortens the first stage considerably. If something is missing, tell us — we will advise on what the entry needs."
+                intro="Having these to hand when you contact us shortens the first stage considerably. If something is missing, tell us and we will advise on what the entry needs."
               />
             </Reveal>
             <Reveal delay={120}>

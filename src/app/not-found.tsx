@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <div className="blueprint bg-navy-900">
       <div className="mx-auto max-w-3xl px-4 py-28 text-center sm:px-6 sm:py-36">
-        <p className="eyebrow text-ember-400">404 — Off route</p>
+        <p className="eyebrow text-ember-400">404 · Off route</p>
         <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
           This consignment took a wrong turn
         </h1>

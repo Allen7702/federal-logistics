@@ -80,7 +80,7 @@ export default function RegionalMap() {
             )}
           </g>
 
-          {/* Tanzania — the gateway */}
+          {/* Tanzania: the gateway */}
           {regionMap.served
             .filter((c) => c.name === "Tanzania")
             .map((c) => (

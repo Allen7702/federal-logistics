@@ -31,7 +31,7 @@ export default function HomePage() {
     <>
       <Hero />
 
-      {/* Clearing & forwarding — the lead capability */}
+      {/* Clearing & forwarding: the lead capability */}
       <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
           <div className="grid gap-14 lg:grid-cols-[1fr_1.05fr] lg:items-start">
@@ -44,7 +44,7 @@ export default function HomePage() {
                     <span className="text-ember-500"> handled properly.</span>
                   </>
                 }
-                intro="Clearance is where consignments stall and costs build. We process import and export documentation through TRA at Dar es Salaam Port, Kilindini and the major border posts, then move the cargo onward — so one team carries your consignment from vessel to final destination."
+                intro="Clearance is where consignments stall and costs build. We process import and export documentation through TRA at Dar es Salaam Port, Kilindini and the major border posts, then move the cargo onward, so one team carries your consignment from vessel to final destination."
               />
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
@@ -149,7 +149,7 @@ export default function HomePage() {
               tone="dark"
               eyebrow="Why Federal Logistics"
               title="Cargo is someone's production line, project or budget"
-              intro="We plan around that. Reliability, compliance and cost control are the reasons clients hand over a consignment — so they are what we build the service on."
+              intro="We plan every move with that in mind. Clients trust us with their cargo for reliability, compliance and cost control, and those three principles shape the way we work."
             />
           </Reveal>
           <div className="mt-12 grid gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
@@ -180,7 +180,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="Regional reach"
                 title="Dar es Salaam, and the markets behind it"
-                intro="Tanzania is the gateway. Our road haulage reaches the landlinked markets that depend on it — so a single consignment can clear the port and keep moving without changing hands."
+                intro="Tanzania is the gateway. Our road haulage reaches the landlinked markets that depend on it, so a single consignment can clear the port and keep moving without changing hands."
               />
               <Link
                 href="/network"

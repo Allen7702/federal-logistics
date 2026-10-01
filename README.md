@@ -1,8 +1,8 @@
-# Federal Logistics Group Limited — Website
+# Federal Logistics Group Limited: Website
 
 Corporate website for Federal Logistics Group Limited (Dar es Salaam, Tanzania), built to the
 company's *Website Content & Development Guide*. The site leads with the company's core
-capability — **customs clearing & forwarding** — and supports it with freight, warehousing,
+capability, **customs clearing & forwarding**, and supports it with freight, warehousing,
 specialised cargo and general supplies & procurement.
 
 ## Stack
@@ -29,7 +29,7 @@ Copy `.env.example` to `.env.local`:
 | `QUOTE_FROM_EMAIL` | Verified sender address |
 | `QUOTE_TO_EMAIL` | Where enquiries are delivered (defaults to `info@federallogisticsgroup.co.tz`) |
 
-Without `RESEND_API_KEY`, enquiries are **logged server-side** rather than emailed — nothing is
+Without `RESEND_API_KEY`, enquiries are **logged server-side** rather than emailed. Nothing is
 lost, but mail must be wired up before launch.
 
 ## Pages
@@ -53,7 +53,7 @@ The hero plays `public/video/hero-port-hd-v3.webm` (AV1) or, where AV1 isn't sup
 `hero-port-hd-v3.mp4` (H.264) behind the headline, over the still at
 `public/images/quay-clearance.webp`. `src/components/HeroVideo.tsx` keeps it well-behaved: the
 still is always rendered underneath, and the video only mounts and fades in when it is worth
-playing — never on phones, never under `prefers-reduced-motion`, never on save-data or 2G/3G
+playing: never on phones, never under `prefers-reduced-motion`, never on save-data or 2G/3G
 connections, and never if the file is missing or autoplay is refused.
 
 The current file is cut from the client's 1080p drone footage of Dar es Salaam Port (Tanzania
@@ -67,7 +67,7 @@ Ports Authority material, used with permission), in `~/Videos/Federal`:
 | 4 | `BANDARI_3.mp4` | 26s → 33s | Reach stacker and terminal tractors working |
 
 Two-second cross-fades between shots, a 1.2s tail-to-head fade so the 22-second loop is soft, no
-audio. Every frame is cropped `1920x880` from `y=200` — the TPA crest sits in a 1673–1885 x 68–199
+audio. Every frame is cropped `1920x880` from `y=200`. The TPA crest sits in a 1673–1885 x 68–199
 box, so dropping the top band removes it at full width with no upscaling and no retouching. The
 2.18:1 result suits the hero's letterbox shape. The footage is graded out of its flat teal look
 (slightly brighter, more saturated, warmer, lightly sharpened) and encoded once from the camera
@@ -77,15 +77,15 @@ files: AV1 crf 46 (5.8 MB) and x264 crf 23 capped at 3 Mbps (7.6 MB). Consider c
 To change the cut or the grade, edit and re-run `./scripts/grade-hero-video.sh`, which reads the
 sources in `~/Videos/Federal`. To drop in different footage, add it under `public/video/` and
 point `HeroVideo`'s `src` in `src/components/Hero.tsx` at it. Give each new file a distinct name rather than overwriting the
-old one — browsers cache video hard, and a changed URL is the only reliable cache-bust.
+old one, since browsers cache video hard, and a changed URL is the only reliable cache-bust.
 
-`./scripts/build-hero-video.sh` rebuilds the earlier stand-in reel — a silent 17-second loop
-assembled from the company's own port stills, each given a slow zoom — if you want to go back to
+`./scripts/build-hero-video.sh` rebuilds the earlier stand-in reel (a silent 17-second loop
+assembled from the company's own port stills, each given a slow zoom) if you want to go back to
 it.
 
 ## Content model
 
-All copy that management may want to change lives in `src/lib/site.ts` — contact details,
+All copy that management may want to change lives in `src/lib/site.ts`: contact details,
 navigation, services, supplies, corridor list, values, why-us points and industries. Editing that
 one file updates every page that uses it. Images live in `public/images/` (WebP, ≤1920px).
 
@@ -117,10 +117,10 @@ Sections that need approved content say so plainly instead.
 
 ## Notes for launch
 
-- Analytics is not yet wired in — add your provider in `src/app/layout.tsx`
+- Analytics is not yet wired in. Add your provider in `src/app/layout.tsx`
 - The regional-reach map (`src/components/RegionalMap.tsx`) is a real geographic map of East and
   Central Africa. Boundaries are generated from Natural Earth 50m data by
-  `scripts/generate-region-map.py` into `src/lib/regionMap.ts` — re-run it only if the region,
+  `scripts/generate-region-map.py` into `src/lib/regionMap.ts`. Re-run it only if the region,
   projection or highlighted countries change. Country flags in `public/flags/` come from
   [flag-icons](https://github.com/lipis/flag-icons) (MIT)
 - Photographs in `public/images/` came from the client's image folder; confirm licensing before

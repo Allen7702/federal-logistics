@@ -24,7 +24,7 @@ const expect = [
   {
     title: "You get a scope, then a price",
     detail:
-      "The quotation states what is included — clearance, handling, transport — so there are no surprises later.",
+      "The quotation states what is included (clearance, handling, transport), so there are no surprises later.",
   },
 ];
 

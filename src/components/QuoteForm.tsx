@@ -36,7 +36,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
       if (!res.ok || !body.ok) throw new Error(body.error ?? "Request failed");
       setStatus("sent");
       setMessage(
-        "Thank you — your enquiry has been received. Our team will respond with a quotation shortly.",
+        "Thank you, your enquiry has been received. Our team will respond with a quotation shortly.",
       );
       form.reset();
     } catch (err) {
@@ -51,7 +51,7 @@ export default function QuoteForm({ compact = false }: { compact?: boolean }) {
 
   return (
     <form onSubmit={onSubmit} noValidate={false} className="space-y-5">
-      {/* Honeypot — real visitors never see or fill this. */}
+      {/* Honeypot: real visitors never see or fill this. */}
       <div aria-hidden className="absolute left-[-9999px] h-0 w-0 overflow-hidden">
         <label htmlFor="company-website">Company website</label>
         <input id="company-website" name="companyWebsite" tabIndex={-1} autoComplete="off" />

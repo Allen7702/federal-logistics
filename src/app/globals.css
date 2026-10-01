@@ -66,7 +66,7 @@
     background: var(--color-ember-500);
   }
   /* Regional map labels: bumped up on phones, where the SVG is scaled down.
-     City labels are dropped there — the dots stay, the clutter does not. */
+     City labels are dropped there; the dots stay, the clutter does not. */
   .map-country {
     font-size: 14px;
   }

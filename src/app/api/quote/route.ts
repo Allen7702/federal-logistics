@@ -90,7 +90,7 @@ export async function POST(request: Request) {
         from: process.env.QUOTE_FROM_EMAIL ?? "website@federallogisticsgroup.co.tz",
         to: [process.env.QUOTE_TO_EMAIL ?? company.email],
         reply_to: enquiry.email,
-        subject: `Quote request — ${enquiry.service} — ${enquiry.name}`,
+        subject: `Quote request: ${enquiry.service} | ${enquiry.name}`,
         text: lines.join("\n"),
       }),
     });

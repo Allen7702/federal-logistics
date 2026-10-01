@@ -19,7 +19,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="A bridge between suppliers, ports and the businesses waiting on cargo"
-        intro="Established in 2022 and headquartered in Dar es Salaam, Federal Logistics Group Limited connects manufacturers, corporate clients and government institutions with quality materials and seamless transport networks."
+        intro="Established in 2022 and headquartered in Dar es Salaam, Federal Logistics Group Limited connects Manufactures, corporate clients and government institutions with quality materials and good transport networks."
         image="/images/vessel-arrival.webp"
         imageAlt="Container vessel arriving at the Port of Dar es Salaam"
       />
@@ -38,9 +38,9 @@ export default function AboutPage() {
                   general supply services.
                 </p>
                 <p>
-                  The company acts as a bridge connecting manufacturers, corporate clients and
+                  The company acts as a bridge connecting Manufactures, corporate clients and
                   government institutions with high-quality materials and seamless transport
-                  networks across East and Central Africa — with customs clearing and
+                  networks across East and Central Africa, with customs clearing and
                   forwarding at the centre of that work.
                 </p>
               </div>
@@ -144,7 +144,7 @@ export default function AboutPage() {
             </h2>
             <p className="mt-5 text-base leading-relaxed text-steel-600">
               Leadership profiles and photographs will be published here once approved by
-              management. The section is built and ready — supply the names, roles and images
+              management. The section is built and ready. Supply the names, roles and images
               and they drop straight in.
             </p>
           </Reveal>

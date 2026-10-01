@@ -20,7 +20,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Our services"
         title="Two divisions, one accountable team"
-        intro="Logistics and supply chain on one side, general supplies and procurement on the other — combined when a client needs the goods sourced, cleared and delivered together."
+        intro="Logistics and supply chain on one side, general supplies and procurement on the other, combined when a client needs the goods sourced, cleared and delivered together."
         image="/images/port-truck-convoy.webp"
         imageAlt="Container trucks leaving the terminal at Dar es Salaam Port"
       />
@@ -100,7 +100,7 @@ export default function ServicesPage() {
                 tone="dark"
                 eyebrow="Division B"
                 title="General Supplies & Procurement"
-                intro="Sourcing against your specification and delivering it — with our own transport and clearing capability behind the supply."
+                intro="Sourcing against your specification and delivering it, with our own transport and clearing capability behind the supply."
               />
               <div className="relative mt-10 aspect-[16/10] overflow-hidden">
                 <Image

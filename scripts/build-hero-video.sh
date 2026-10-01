@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Builds public/video/hero.mp4 — the hero background reel.
+# Builds public/video/hero.mp4, the hero background reel.
 #
 # Writes the stills reel. To actually use it, point HeroVideo's `src` in
 # src/components/Hero.tsx at /video/hero-stills-reel.
@@ -7,7 +7,7 @@
 # This is a stand-in assembled from the company's own stills: each image gets a
 # slow zoom, the clips cross-fade, and the tail fades back into the opening so
 # the loop is close to seamless. Replace it with real footage when filming is
-# done — same path, same treatment expected (silent, ~15-20s, 1600x900).
+# done. Same path, same treatment expected (silent, ~15-20s, 1600x900).
 #
 # Usage: ./scripts/build-hero-video.sh
 set -euo pipefail

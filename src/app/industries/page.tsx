@@ -50,10 +50,10 @@ export default function IndustriesPage() {
             ))}
             <div className="hidden bg-steel-50 p-8 md:block" />
           </div>
-          <p className="mt-8 max-w-2xl text-sm leading-relaxed text-steel-600">
-            Working in a sector not listed here? The handling plan is built per consignment —
+          {/* <p className="mt-8 max-w-2xl text-sm leading-relaxed text-steel-600">
+            Working in a sector not listed here? The handling plan is built per consignment, so
             tell us what needs to move and we will confirm whether we are the right fit.
-          </p>
+          </p> */}
         </div>
       </section>
 

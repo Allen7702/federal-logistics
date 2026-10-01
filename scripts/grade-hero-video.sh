@@ -2,14 +2,14 @@
 # Builds the hero background reel from the client's original 1080p drone
 # footage, in a single encode from the camera files:
 #
-#   public/video/<name>.webm  AV1 — smaller and sharper, used where supported
+#   public/video/<name>.webm  AV1, smaller and sharper, used where supported
 #   public/video/<name>.mp4   H.264 fallback
 #
 # Cut: four 7s shots with 2s cross-fades, then a 1.2s tail-to-head fade so the
 # loop is soft. Every frame is cropped 1920x880 from y=200, which drops the TPA
 # crest in the top band with no upscaling (see README "Hero video").
 #
-# Grade: lifts the footage out of its flat teal look — a touch more exposure
+# Grade: lifts the footage out of its flat teal look: a touch more exposure
 # and contrast, stronger saturation, a warmer balance, then mild sharpening.
 #
 # Usage: ./scripts/grade-hero-video.sh [source-dir] [output-name]

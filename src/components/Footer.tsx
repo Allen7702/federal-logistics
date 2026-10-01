@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-navy-100/70">
               A fully integrated supply chain and logistics management firm headquartered in
-              Dar es Salaam — customs clearing and forwarding, freight, warehousing and
+              Dar es Salaam, offering customs clearing and forwarding, freight, warehousing and
               general supplies across East and Central Africa.
             </p>
             <p className="mt-5 text-[0.7rem] uppercase tracking-[0.28em] text-ember-400">

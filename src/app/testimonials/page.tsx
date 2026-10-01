@@ -9,7 +9,7 @@ import { values, whyUs } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Client Trust",
   description:
-    "What Federal Logistics Group Limited commits to on every consignment — and where verified client testimonials will be published.",
+    "What Federal Logistics Group Limited commits to on every consignment, and where verified client testimonials will be published.",
   alternates: { canonical: "/testimonials" },
 };
 
@@ -76,8 +76,8 @@ export default function TestimonialsPage() {
             Worked with us and happy to say so?{" "}
             <Link href="/contact" className="text-ember-400 underline underline-offset-4">
               Send us a testimonial
-            </Link>{" "}
-            — we publish only what clients approve.
+            </Link>
+            . We publish only what clients approve.
           </p>
         </div>
       </section>

@@ -46,7 +46,7 @@ export default function ProjectsPage() {
     <>
       <PageHero
         eyebrow="Projects"
-        title="Work in progress — and a place to show it"
+        title="Work in progress, and a place to show it"
         intro="This portfolio is built and ready for Federal Logistics Group's completed and ongoing assignments. Approved project details and photographs are published here as management releases them."
         image="/images/port-operations.webp"
         imageAlt="Container handling operations at Dar es Salaam Port"
